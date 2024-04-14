@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DemoRestController {
-	
+	@GetMapping("/msg")
 	public ResponseEntity<String>getMsg(){
 		String msg="Welcome to Rest API Dashbord";
 		return new ResponseEntity<>(msg, HttpStatus.OK);
